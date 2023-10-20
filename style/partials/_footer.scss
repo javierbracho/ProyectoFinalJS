@@ -1,0 +1,45 @@
+.footer{
+    padding: 0.7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $maincolor;
+    font-size: 1rem;
+
+        &-parrafo {
+            @include sizes (421px, 40px);
+        }
+
+        p {
+            color: white;
+            @include sizes (100%, 100%);
+            margin-bottom: 0px;
+            padding-top: 10px; 
+        }
+
+        &-redes-sociales {
+            display: flex;
+            justify-content: space-between;
+            width: 150px;
+
+                &-instagram {
+                    @include sizes (43.2px, 43.2px);                     
+                }
+                
+                &-twitter {
+                    @include sizes (43.2px, 43.2px);
+                
+                }
+                
+                &-facebook {
+                    @include sizes (43.2px, 43.2px); 
+                }
+
+        }
+
+        &-redes-sociales img {
+            @include sizes (100%, 100%);
+        }
+}
+
+

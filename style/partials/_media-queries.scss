@@ -1,0 +1,83 @@
+@media screen and (max-width: 600px) {
+    .direccion {
+        width: 85%;
+        max-width: 100%
+    }
+};
+    
+@media screen and (max-width: 572px) {
+    .contenedor-logo-principal-imagen {
+        width: 100%; 
+    }    
+    .main-grilla {
+        margin-bottom: 3rem;
+
+            &-hija {
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr ;
+                grid-template-areas:
+                                    "todocomputador  mejoresaccesorios"
+                                    "mejorpcgamer  tarjetasdevideo" ;
+            }
+    }
+
+    .marcas-principales{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        justify-content: stretch;
+        gap: 3rem;
+        margin-bottom: 3rem;
+        align-items: center;
+
+            &-notebook img {
+                    width: 90vw;
+                }
+
+                &-notebook img:hover{
+                    width: 93vw;
+                }
+    
+            }
+
+
+    .banner-principal {
+        margin-bottom: 3rem;
+
+            &-imagen {
+                width: auto;
+                height: auto;
+            }
+    }
+
+    .marcas-alternativas {
+        margin-bottom: 5rem;
+
+            &-imagen {
+                width: 25vw;
+                height: auto;
+            }
+    }
+
+    .productos {
+        grid-template-columns: 38vw 38vw;
+        grid-template-rows: 1fr 1fr 1fr;
+         grid-template-areas:
+            "notebook-1  notebook-2"
+            "notebook-3  notebook-4"
+            "notebook-5  notebook-6"
+            "notebook-7  notebook-8"
+            "notebook-9    .       ";   
+    }   
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+
+            &-parrafo {
+                width: auto;
+                height: auto;
+                }
+            }
+        }     
+        

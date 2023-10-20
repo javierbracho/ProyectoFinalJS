@@ -1,0 +1,338 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.contenedor-logo-principal {
+  background-color: rgb(37, 20, 45);
+}
+.contenedor-logo-principal-imagen {
+  width: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navbar {
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.nav-item:hover {
+  -webkit-text-decoration: underline rgb(37, 20, 45);
+          text-decoration: underline rgb(37, 20, 45);
+}
+
+.footer {
+  padding: 0.7rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(37, 20, 45);
+  font-size: 1rem;
+}
+.footer-parrafo {
+  width: 421px;
+  height: 40px;
+}
+.footer p {
+  color: white;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 0px;
+  padding-top: 10px;
+}
+.footer-redes-sociales {
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+}
+.footer-redes-sociales-instagram {
+  width: 43.2px;
+  height: 43.2px;
+}
+.footer-redes-sociales-twitter {
+  width: 43.2px;
+  height: 43.2px;
+}
+.footer-redes-sociales-facebook {
+  width: 43.2px;
+  height: 43.2px;
+}
+.footer-redes-sociales img {
+  width: 100%;
+  height: 100%;
+}
+
+.despacho-banner {
+  width: 100vw;
+  margin-bottom: 3rem;
+}
+
+.productos {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 25vw 25vw 25vw;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "notebook-1  notebook-2  notebook-3" "notebook-4  notebook-5  notebook-6" "notebook-7  notebook-8  notebook-9";
+  gap: 3rem;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+}
+.productos-card-1 {
+  grid-area: notebook-1;
+  width: auto;
+  text-align: center;
+}
+.productos-card-1:hover {
+  transform: scale(1.1);
+}
+.productos-card-2 {
+  grid-area: notebook-2;
+  width: auto;
+  text-align: center;
+}
+.productos-card-2:hover {
+  transform: scale(1.1);
+}
+.productos-card-3 {
+  grid-area: notebook-3;
+  width: auto;
+  text-align: center;
+}
+.productos-card-3:hover {
+  transform: scale(1.1);
+}
+.productos-card-4 {
+  grid-area: notebook-4;
+  width: auto;
+  text-align: center;
+}
+.productos-card-4:hover {
+  transform: scale(1.1);
+}
+.productos-card-5 {
+  grid-area: notebook-5;
+  width: auto;
+  text-align: center;
+}
+.productos-card-5:hover {
+  transform: scale(1.1);
+}
+.productos-card-6 {
+  grid-area: notebook-6;
+  width: auto;
+  text-align: center;
+}
+.productos-card-6:hover {
+  transform: scale(1.1);
+}
+.productos-card-7 {
+  grid-area: notebook-7;
+  width: auto;
+  text-align: center;
+}
+.productos-card-7:hover {
+  transform: scale(1.1);
+}
+.productos-card-8 {
+  grid-area: notebook-8;
+  width: auto;
+  text-align: center;
+}
+.productos-card-8:hover {
+  transform: scale(1.1);
+}
+.productos-card-9 {
+  grid-area: notebook-9;
+  width: auto;
+  text-align: center;
+}
+.productos-card-9:hover {
+  transform: scale(1.1);
+}
+
+#cesta-carrito {
+  border: none;
+  color: rgb(37, 20, 45);
+  font-size: 30px;
+  background-color: white;
+  border-radius: 50%;
+  padding: 10px 20px;
+  transition: all 0.3s;
+}
+
+#cesta-carrito:hover {
+  cursor: pointer;
+  color: white;
+  background-color: rgb(37, 20, 45);
+}
+
+#cesta-carrito:focus {
+  outline: none;
+}
+
+.modal-contenedor {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.modal-active {
+  opacity: 1;
+  visibility: visible;
+  z-index: 5;
+}
+
+.modal-carrito {
+  position: relative;
+  background-color: white;
+  min-width: 500px;
+  padding: 20px;
+  margin-top: -100%;
+  transition: all 0.5s;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+
+.modal-active .modal-carrito {
+  margin-top: 0;
+}
+
+.modal-carrito h3 {
+  color: rgb(37, 20, 45);
+  padding-bottom: 5px;
+}
+
+.modal-carrito #btn-cerrar-carrito {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 20px;
+  color: rgb(37, 20, 45) !important;
+  border: none;
+  background-color: white;
+}
+
+.modal-carrito #btn-cerrar-carrito:hover {
+  cursor: pointer;
+}
+
+.modal-carrito #btn-cerrar-carrito:focus {
+  outline: none;
+}
+
+.modal-carrito .producto-precio {
+  padding-top: 10px;
+}
+
+.productoEnCarrito {
+  border-left: 5px solid lightblue;
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+  margin: 5px 0;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.productoEnCarrito:hover {
+  border-left: 5px solid rgb(225, 76, 65);
+}
+
+.boton-eliminar {
+  background-color: white;
+  color: rgb(37, 20, 45);
+  border: none;
+  font-size: 20px;
+}
+
+.boton-eliminar:hover {
+  cursor: pointer;
+}
+
+.boton-eliminar:focus {
+  outline: none;
+}
+
+@media screen and (max-width: 600px) {
+  .direccion {
+    width: 85%;
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 572px) {
+  .contenedor-logo-principal-imagen {
+    width: 100%;
+  }
+  .main-grilla {
+    margin-bottom: 3rem;
+  }
+  .main-grilla-hija {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "todocomputador  mejoresaccesorios" "mejorpcgamer  tarjetasdevideo";
+  }
+  .marcas-principales {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: stretch;
+    gap: 3rem;
+    margin-bottom: 3rem;
+    align-items: center;
+  }
+  .marcas-principales-notebook img {
+    width: 90vw;
+  }
+  .marcas-principales-notebook img:hover {
+    width: 93vw;
+  }
+  .banner-principal {
+    margin-bottom: 3rem;
+  }
+  .banner-principal-imagen {
+    width: auto;
+    height: auto;
+  }
+  .marcas-alternativas {
+    margin-bottom: 5rem;
+  }
+  .marcas-alternativas-imagen {
+    width: 25vw;
+    height: auto;
+  }
+  .productos {
+    grid-template-columns: 38vw 38vw;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "notebook-1  notebook-2" "notebook-3  notebook-4" "notebook-5  notebook-6" "notebook-7  notebook-8" "notebook-9    .       ";
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-parrafo {
+    width: auto;
+    height: auto;
+  }
+}
+@keyframes scale-up-bottom {
+  0% {
+    transform: scale(0.5);
+    transform-origin: 50% 100%;
+  }
+  100% {
+    transform: scale(1);
+    transform-origin: 50% 100%;
+  }
+}/*# sourceMappingURL=main.css.map */

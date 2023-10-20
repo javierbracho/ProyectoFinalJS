@@ -1,0 +1,21 @@
+$maincolor: rgb(37, 20, 45);
+
+@mixin flex-row-center-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-column-center-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin sizes ($width, $height) {
+    width: $width;
+    height: $height;
+
+}
