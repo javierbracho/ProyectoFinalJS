@@ -1,0 +1,24 @@
+.quienes-somos-banner {
+    width: 100vw;
+    margin-bottom: 3rem; 
+}
+
+.quienes-somos {
+    width: 95%;
+    margin: auto auto;
+    text-align: justify;
+    margin-bottom: 3rem;
+}  
+
+.titulo-oficinas {
+    text-align: center;
+}
+
+.mapas {
+    @include flex-row-center-center;
+    margin-bottom: 5rem;
+}
+
+.direccion {
+    width: 100%;
+} 

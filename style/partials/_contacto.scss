@@ -1,0 +1,14 @@
+.contacto-banner {
+    width: 100vw;
+    margin-bottom: 2rem;
+}
+
+.caja-de-contacto {
+    @include flex-column-center-center;
+    margin-bottom: 5rem;
+
+        &-texto {
+            display: flex;
+            flex-direction: column;
+        }
+}

@@ -1,0 +1,97 @@
+.main-grilla {
+    @include flex-row-center-center;
+    margin-top: 4rem;
+    margin-bottom: 6.5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+
+        &-hija {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+            grid-template-areas: 
+                                "todocomputador  mejorpcgamer  mejoresaccesorios"
+                                "todocomputador  tarjetasdevideo  mejoresaccesorios";
+            gap:1rem;
+
+                &-todocomputador {
+                    grid-area: todocomputador;
+
+                        &-imagen {
+                            @include sizes (100%, 100%);
+                            object-fit: fill;
+                        }
+
+                }
+            
+                &-mejorpcgamer {
+                    grid-area: mejorpcgamer;
+
+                        &-imagen {
+                            @include sizes (100%, 100%);
+                            object-fit: fill;
+                        
+                        }
+                }
+                
+                &-tarjetasdevideo {
+                    grid-area: tarjetasdevideo;
+
+                        &-imagen {
+                            @include sizes (100%, 100%);
+                            object-fit: fill;
+                        }
+                }
+
+                &-mejoresaccesorios {
+                    grid-area: mejoresaccesorios;
+
+                        &-imagen {
+                            @include sizes (100%, 100%);
+                            object-fit: fill;
+                        }
+                }
+        }
+
+}
+.marcas-principales {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 7rem;
+
+        &-notebook img {
+            width: 28vw;
+        }
+
+            &-notebook img:hover{
+                transform: scale(1.1);
+            }
+
+    }
+
+.banner-principal {
+    @include flex-row-center-center;
+    margin-bottom: 5rem;
+
+        &-imagen {
+            @include sizes (95vw, 10vw);
+
+                img {
+                    @include sizes (100%, 100%);
+                }
+        }        
+}
+.marcas-alternativas {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 7rem;
+
+        &-imagen {
+            @include sizes (17vw, 5vw);
+
+                img {
+                    @include sizes (100%, 100%);
+                }
+        }
+}
+

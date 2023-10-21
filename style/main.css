@@ -236,6 +236,10 @@
   padding-top: 10px;
 }
 
+.precioProducto {
+  margin-top: 20px;
+}
+
 .productoEnCarrito {
   border-left: 5px solid lightblue;
   border-bottom-left-radius: 3px;
@@ -335,4 +339,156 @@
     transform: scale(1);
     transform-origin: 50% 100%;
   }
+}
+.contacto-banner {
+  width: 100vw;
+  margin-bottom: 2rem;
+}
+
+.caja-de-contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+.caja-de-contacto-texto {
+  display: flex;
+  flex-direction: column;
+}
+
+.despacho-banner {
+  width: 100vw;
+}
+
+.despachos {
+  width: 95%;
+  margin: auto auto;
+  text-align: justify;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+}
+
+.main-grilla {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+  margin-bottom: 6.5rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.main-grilla-hija {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "todocomputador  mejorpcgamer  mejoresaccesorios" "todocomputador  tarjetasdevideo  mejoresaccesorios";
+  gap: 1rem;
+}
+.main-grilla-hija-todocomputador {
+  grid-area: todocomputador;
+}
+.main-grilla-hija-todocomputador-imagen {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+.main-grilla-hija-mejorpcgamer {
+  grid-area: mejorpcgamer;
+}
+.main-grilla-hija-mejorpcgamer-imagen {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+.main-grilla-hija-tarjetasdevideo {
+  grid-area: tarjetasdevideo;
+}
+.main-grilla-hija-tarjetasdevideo-imagen {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+.main-grilla-hija-mejoresaccesorios {
+  grid-area: mejoresaccesorios;
+}
+.main-grilla-hija-mejoresaccesorios-imagen {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
+.marcas-principales {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 7rem;
+}
+.marcas-principales-notebook img {
+  width: 28vw;
+}
+.marcas-principales-notebook img:hover {
+  transform: scale(1.1);
+}
+
+.banner-principal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+.banner-principal-imagen {
+  width: 95vw;
+  height: 10vw;
+}
+.banner-principal-imagen img {
+  width: 100%;
+  height: 100%;
+}
+
+.marcas-alternativas {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 7rem;
+}
+.marcas-alternativas-imagen {
+  width: 17vw;
+  height: 5vw;
+}
+.marcas-alternativas-imagen img {
+  width: 100%;
+  height: 100%;
+}
+
+.quienes-somos-banner {
+  width: 100vw;
+  margin-bottom: 3rem;
+}
+
+.quienes-somos {
+  width: 95%;
+  margin: auto auto;
+  text-align: justify;
+  margin-bottom: 3rem;
+}
+
+.titulo-oficinas {
+  text-align: center;
+}
+
+.mapas {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+
+.direccion {
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */

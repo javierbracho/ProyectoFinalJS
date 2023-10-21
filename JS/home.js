@@ -7,7 +7,7 @@ let productos;
 const mostrarProductos = () => {
     const main = document.querySelector(".productos");
     
-    fetch ("./stock.json")
+    fetch ("../stock.json")
         .then(response => response.json())
         .then(data => {
             productos = data
