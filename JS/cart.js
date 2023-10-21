@@ -3,11 +3,17 @@ let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 const contenedorProductos = document.querySelector(".productos");
 
 contenedorProductos.addEventListener("click", (e) => {
-    e.target.classList.contains('agregar') && comprobarCarrito(e.target.id)
+    e.preventDefault()
+    e.target.classList.contains('agregar') && comprobarCarrito(e.target.id);
+
 });
 
 const comprobarCarrito = (id) => {
     let productoEncontrado = carrito.find((el) => el.id === parseInt(id));
+    Toastify({
+        text: "Has agregado un producto a tu carrito!",
+        duration: 3000,
+    }).showToast();
 
     if (productoEncontrado) {
         productoEncontrado.cantidad++;
@@ -46,6 +52,7 @@ const mostrarProductosEnCarrito = (carrito) => {
         const div = document.createElement("div");
         div.classList.add("productoEnCarrito");
         div.innerHTML = `<p>${producto.marca}</p>
+                        <p>${producto.modelo}</p>
                         <p>Precio:${formatearPrecio(producto.precio)}</p>
                         <p id="cantidad${producto.id}">Cantidad: ${producto.cantidad}</p>
                         <button class="btn waves-effect waves-light boton-eliminar" value="${producto.id}">X</button>`;
@@ -54,7 +61,12 @@ const mostrarProductosEnCarrito = (carrito) => {
 };
 
 const eliminarProducto = (Idproducto) => {
-    const localizarIndex = carrito.findIndex(producto => producto.id == Idproducto)
+    const localizarIndex = carrito.findIndex(producto => producto.id == Idproducto);
+    Toastify({
+        text: "Has eliminado un producto de tu carrito!",
+        duration: 3000,
+    }).showToast();
+
         if(carrito[localizarIndex].cantidad > 1) {
             carrito[localizarIndex].cantidad -= 1;
         } else {

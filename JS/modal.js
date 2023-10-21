@@ -16,4 +16,5 @@ modalCarrito.addEventListener("click", (e) => {
     e.stopImmediatePropagation
     e.target.classList.contains('boton-eliminar') && eliminarProducto(e.target.value);
 
+
 })
